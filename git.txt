@@ -1,0 +1,49 @@
+git config --global user.name 'caishuxueqianliu'
+git config --global user.email '470290171@qq.com'
+
+git init
+
+git status
+git add .
+git add  暂存区
+
+git commit -m 'add src'  仓库给i他
+
+
+git remote add origin git@github.com:caishuxueqianliu/caishuxueqianliu.git
+
+git remote add origin https://github.com/caishuxueqianliu/vue-element-admin-master.git
+
+git remote add origin https://github.com/caishuxueqianliu/caishuxueqianliu.github.io.git
+
+
+https://github.com/caishuxueqianliu/node-element-admin-master.git
+https://github.com/caishuxueqianliu/caishuxueqianliu.github.io.git
+git pull --rebase origin master
+
+git push origin master
+
+git pull origin master
+
+git config --list
+git remote rm origin
+git clone https://github.com/caishuxueqianliu/Vue-Javascript-Node.git
+
+
+git pull --rebase origin master
+
+切换到gh-pages分支 git checkout -b gh-pages
+
+执行 npm run build 命令，构建代码
+
+# 强制添加dist文件夹，因为.gitignore文件中定义了忽略该文件
+git add -f dist
+ 
+# 提交到本地暂存区
+git commit -m 'Initial the page of project'
+ 
+# 部署dist目录下的代码
+git subtree push --prefix dist origin gh-pages
+
+
+git config --global core.autocrlf false
