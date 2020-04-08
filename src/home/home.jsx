@@ -1,7 +1,9 @@
 import React from 'react'
 import { Carousel ,Button} from 'antd';
-
-
+import { Card } from 'antd';
+import './home.less'
+import icon from '.././assest/Icon1024x1024.png'
+import img1 from '.././assest/1.jpg'
 export default class Home extends React.Component{
 constructor(props){
 	super(props)
@@ -60,16 +62,31 @@ componentDidUpdate(preProps,preState){
 
 
 
-
 render(){
 
-	return <div>
-	<h1>hpome</h1>
 
-   <Button type="primary">Primary</Button>
-    <Button>Default</Button>
-    <Button type="dashed">Dashed</Button>
-    <Button type="link">Link</Button>
+
+	return <div className='all'>
+
+
+<Card className='card' > 
+<Carousel autoplay effect="fade"> 
+    <div>
+      <img src={img1}/>
+    </div>
+    <div>
+             <img src={img1}/>
+    </div>
+    <div>
+             <img src={img1}/>
+    </div>
+    <div>           <img src={img1}/> </div>
+  </Carousel>
+ </Card>
+    <Card className='card' title="Card title" bordered={false}>  </Card>
+    <Card className='card' title="Card title" bordered={false}>  <img className='icon' src={icon}/> </Card>
+
+
 	</div>
 }
 

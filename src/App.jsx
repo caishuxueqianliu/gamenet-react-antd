@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css';
+import './App.less';
 import Home from './home/home.jsx'
 import About from './about/about.jsx'
 import {BrowserRouter, Route,Switch,Redirect,Link} from 'react-router-dom'
+
 
 function App() {
   return (
@@ -18,8 +19,17 @@ function App() {
                 <Link to='/gamenet2'>111</Link>
                  <Link to='/gamenet2/about'>222</Link>
     
+<div className='top-lbt'> 
 
-                    
+<div className='jumu'> 
+
+  <h1>海盗勇士</h1>
+<hr/>
+
+<p>©️xxxxx</p>
+<p>30zi</p>
+ </div>
+    </div>                 
 </div>
 
 
@@ -36,7 +46,10 @@ function App() {
 
 </div>
 
-<div className='foot'></div>
+<div className='foot'>
+<p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+<p>©️xxxxx</p>
+</div>
   </BrowserRouter>
 </div>
 
