@@ -1,6 +1,6 @@
 import React from 'react'
+import { Carousel ,Button} from 'antd';
 
-import ReactTypes from 'prop-types'
 
 export default class Home extends React.Component{
 constructor(props){
@@ -19,9 +19,6 @@ constructor(props){
 	}
 //规定传值的类型
 //npm i prop-types
-static propTypes={
-	//initcount:ReactTypes.number
-}
 
 
 componentWillMount(){
@@ -67,9 +64,12 @@ componentDidUpdate(preProps,preState){
 render(){
 
 	return <div>
-	<h1>About123</h1>
+	<h1>hpome</h1>
 
-
+   <Button type="primary">Primary</Button>
+    <Button>Default</Button>
+    <Button type="dashed">Dashed</Button>
+    <Button type="link">Link</Button>
 	</div>
 }
 

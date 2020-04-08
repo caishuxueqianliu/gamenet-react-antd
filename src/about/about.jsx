@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ReactTypes from 'prop-types'
+
 
 export default class About extends React.Component{
 constructor(props){
@@ -19,9 +19,7 @@ constructor(props){
 	}
 //规定传值的类型
 //npm i prop-types
-static propTypes={
-	//initcount:ReactTypes.number
-}
+
 
 
 componentWillMount(){
@@ -67,7 +65,7 @@ componentDidUpdate(preProps,preState){
 render(){
 
 	return <div>
-	<h1>About123</h1>
+	<h1>aaaaaaaaaa</h1>
 
 
 	</div>
